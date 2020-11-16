@@ -1,0 +1,24 @@
+{
+  "name": "areyoumarveler",
+  "version": "1.0.0",
+  "description": "Quiz to find out how big fan you are of marvel.",
+  "main": "areyoumarveler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaswanthReddyPadala/NeogCamp.git"
+  },
+  "author": "Jaswanth Reddy Padala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaswanthReddyPadala/NeogCamp/issues"
+  },
+  "homepage": "https://github.com/JaswanthReddyPadala/NeogCamp#readme",
+  "dependencies": {
+    "@replit/database": "^2.0.0",
+    "chalk": "^4.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}
