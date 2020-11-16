@@ -124,7 +124,7 @@ console.log("Woohooo!!, you scored "+playerScore);
 
 ## **OUTPUT**
 
-![Output of above program](./images/output.jpg)
+![Output of above program](./images/output.JPG)
 
 ### CHECKOUT MY OTHER CLI QUIZ PROJECTS
 
