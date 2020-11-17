@@ -280,7 +280,7 @@ YAY!! you have done a CLI project, Though it is simple this will help you in bui
 - [You don't know javascript](https://github.com/getify/You-Dont-Know-JS)
 
 
-### **I LOVE TO HERE COMMENTS AND TAKE FEEDBACK ❤❤❤**
+### **YOUR FEEDBACK WOULD BE USEFUL TO IMPROVE THIS DOCUMENTATION ❤**
 
-## If you like this write me on [twitter](https://twitter.com/jaswanthreddyp2) | [Github](https://github.com/JaswanthReddyPadala/) | jaswanthreddypadala@gmail.com
+## If you like the documentation, write me on [twitter](https://twitter.com/jaswanthreddyp2) | [Github](https://github.com/JaswanthReddyPadala/) | jaswanthreddypadala@gmail.com
 
