@@ -269,7 +269,7 @@ console.log("Woohooo!!, you scored "+finalScore);   // printing final score.
 
 ## **OUTPUT**
 
-![Output of above program](./images/output.jpg)
+![Output of above program](./images/output.JPG)
 
 ### REPL link for above code [PLAY QUIZ](https://repl.it/@jaswanthreddyp/QUIZ?embed=1&output=1#index.js) | [QUIZ CODE](https://repl.it/@jaswanthreddyp/QUIZ#index.js)
 
