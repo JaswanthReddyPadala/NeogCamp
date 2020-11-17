@@ -156,13 +156,8 @@ printName("Tanay");     // --> this print :  "Hi Tanay"
 printName("Akanksha");     // --> this print :  "Hi Akanksha"
 ```
 
-## Best resources to learn **Javascript**
 
-- [MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Eloquent Javascript book](https://eloquentjavascript.net/Eloquent_JavaScript.pdf)
-- [Tanay Pratap's Javascript playlist](https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB)
-- [You don't know javascript](https://github.com/getify/You-Dont-Know-JS)
-
+## **Quiz project**
 Now, let's get into our simple javscript and nodejs project. In this simple project we build a simple Command Line Interface quiz. Eventually while doing the project let us build our project.
 
 What we will be learning by doing this project?
@@ -271,10 +266,19 @@ console.log("Woohooo!!, you scored "+finalScore);   // printing final score.
 
 ![Output of above program](./images/output.JPG)
 
+YAY!! you have done a CLI project, Though it is simple this will help you in building you fundamentals good.
+*Hope you learnt basics OF javascript*
+
 ### REPL link for above code [PLAY QUIZ](https://repl.it/@jaswanthreddyp/QUIZ?embed=1&output=1#index.js) | [QUIZ CODE](https://repl.it/@jaswanthreddyp/QUIZ#index.js)
 
-YAY!! you have done a CLI project, Though it is simple this will help you in building you fundamentals good.
-Hope you learnt some basics.
+
+## **EXPLORE JAVASCRIPT RESOURCES**
+
+- [MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Eloquent Javascript book](https://eloquentjavascript.net/Eloquent_JavaScript.pdf)
+- [Tanay Pratap's Javascript playlist](https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB)
+- [You don't know javascript](https://github.com/getify/You-Dont-Know-JS)
+
 
 ### **I LOVE TO HERE COMMENTS AND TAKE FEEDBACK ❤❤❤**
 
