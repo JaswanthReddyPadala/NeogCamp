@@ -1,10 +1,20 @@
 //required packages
 const readlineSync = require('readline-sync');
 const chalk = require('chalk');
-const Database = require("@replit/database")
-
-//create a new database
-const db = new Database()
+const contestents = [
+	// {
+	// "Tanay Pratap" : 8,
+	// },
+	// {"Akanksha choudary" : 9,
+	// },
+	{"Jaswanth Reddy" : 7,
+	}
+	// ,
+	// {"Kanishk Gupta" : 6,
+	// },
+	// {"Tanvi" : 4
+	// }
+];
 
 //shortcut variables
 var blue = chalk.bold.blue;
@@ -14,36 +24,22 @@ var yellow = chalk.bold.yellow;
 var white = chalk.bold.white;
 
 //declaring variables
-var player_name = (readlineSync.question(chalk.bold.bgBlack("Hello there, what is your name: "))).toUpperCase();
+var player_name = readlineSync.question(chalk.bold.bgBlack("Hello there, what is your name: ")).toUpperCase();
 console.log("");
 
 //welcoming messages
-console.log(chalk.bold.bgYellow("WELCOME TO THE KNOWLEDGE QUEST!!! " + player_name +"\n"));
-console.log(chalk.bold.bgBlue("KNOW THE RULES, BEFORE YOU PLAY"))
-console.log(chalk.bold.white("          1. Totally there are 10 questions."));
-console.log(chalk.bold.white("          2. Choose the option among 'a' or 'b' or 'c' or 'd'."))
-
-db.list().then(keys => {
-	var firstTime = 0;
-	keys.forEach(key => {
-		if(key == player_name){
-			firstTime = 1;
-		}
-	});
-	if(keys.length == 0){
-		db.set("maxValue",0).then(() => {
-			var returnScore =  playQuiz();
-validate(returnScore);
-enterData(player_name, returnScore);
-	});
-}});
+console.log(chalk.bold.bgRgb(10, 100, 200)("WELCOME TO THE MARVEL QUIZ!!! " + player_name +"\n"));
+console.log(chalk.bold.bgHex('16a596')("KNOW THE RULES, BEFORE YOU PLAY"))
+console.log(chalk.bold.hex('ec5858')("          1. Totally there are 10 questions."));
+console.log(chalk.bold.hex('ec5858')("          2. Choose the option among 'a' or 'b' or 'c' or 'd'."))
 
 var returnScore =  playQuiz();
 validate(returnScore);
 enterData(player_name, returnScore);
 
 //MARVEL QUIZ QUESTIONS PLAY
-function playQuiz(){
+function playQuiz()
+{
 var player_score=0;
 console.log(chalk.bold.white("Cool, Let's us know how much you ")+chalk.bold.bgRed("MARVEL")+"\n");
 
@@ -136,11 +132,11 @@ const marvelQuiz = [
 
 //START QUIZ
   for (let i = 0; i < marvelQuiz.length; i++) {
-    console.log(`${i + 1}. ${yellow(marvelQuiz[i].q)}`);
-    console.log(`          a: ${white(marvelQuiz[i].a1)}`);
-    console.log(`          b: ${white(marvelQuiz[i].a2)}`);
-    console.log(`          c: ${white(marvelQuiz[i].a3)}`);
-    console.log(`          d: ${white(marvelQuiz[i].a4)}`);
+    console.log(chalk.bold.bgHex('f2f4c0')(`${i + 1}. ${marvelQuiz[i].q}`));
+    console.log(chalk.bold.hex("bce6eb")(`          a: ${(marvelQuiz[i].a1)}`));
+    console.log(chalk.bold.hex("bce6eb")(`          b: ${(marvelQuiz[i].a2)}`));
+    console.log(chalk.bold.hex("bce6eb")(`          c: ${(marvelQuiz[i].a3)}`));
+    console.log(chalk.bold.hex("bce6eb")(`          d: ${(marvelQuiz[i].a4)}`));
     var thisAnswer = readlineSync.question("Answer: ");
 	console.log("\n");
    if (thisAnswer.toLowerCase() == marvelQuiz[i].crt){ 
@@ -159,34 +155,35 @@ if (returnScore== 10 ){
       console.log(chalk.bold.bgGreen("You are a TRUE MARVEL FAN, you scored FULL!! ZING ZING YOU ARE AMAZING")+"😍😍😍");
    }   
    else if(returnScore>5   && returnScore<10 ){
-    console.log(`${chalk.bold.bgBlack("You are a good, you scored: ")} ${chalk.bold.bgGreen (returnScore)}`+ "😉😉😉");
+    console.log(`${chalk.bold.bgBlack("You are a good, you scored: ")} ${chalk.bold.bgGreen (" "+returnScore+" ")}`+ "😉😉😉");
    }
    else{ 
-   console.log(`${chalk.bold.red("🤨🤨🤨, You are a not a true MARVEL fan, you scored: ")} ${chalk.bold.bgRed(returnScore)}`);
+   console.log(`${chalk.bold.red("🤨🤨🤨, You are a not a true MARVEL fan, you scored: ")} ${chalk.bold.bgRed(" "+returnScore+" ")}`);
   }
+} 
 
-
-}
-  
 function enterData(player_name, returnScore){
-	
-db.set(`${player_name}`, `${returnScore}`).then(() => {
-db.get("maxValue").then(value => {
-	if (value <= returnScore){
-		db.set("maxValue", returnScore);
-		console.log(`${blue("YOU SCORE IS THE HIGHEST - ")}${returnScore} 😮😮😮`)
-	}
-	else{
-		db.get("maxValue").then(value =>{
-			console.log(`${yellow("HIGHEST SCORE TILL NOW IS - ")}${value} 😉`)
-		});
-	}
-});
+	contestents.push(`{${player_name} : ${returnScore}}`);
+			if (contestents[0]["Tanay Pratap"] <= returnScore){
+					console.log(`${blue("YOU SCORE IS THE HIGHEST - ")}${" "+returnScore+" \n"} 😮😮😮`);
+			}
+			else{
+				console.log(`${yellow("HIGHEST SCORE TILL NOW IS - ")}${" "+returnScore+" \n"} 😉`);
+			}
+console.log(chalk.bold.bgRgb(130,240,12)(" LEADER BOARD "));
 
-});
-}
+} 
 
 
-db.list().then(keys => {
-    console.log(keys);
-});
+    console.log(contestents.keys);
+
+
+
+// code to delete all in database
+// db.list().then(keys => {
+// 	keys.forEach(key => {
+// db.delete(key).then(() => {
+// 	console.log("deleted")
+// });
+// 	})
+// });

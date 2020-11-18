@@ -156,8 +156,8 @@ printName("Tanay");     // --> this print :  "Hi Tanay"
 printName("Akanksha");     // --> this print :  "Hi Akanksha"
 ```
 
-
 ## **Quiz project**
+
 Now, let's get into our simple javscript and nodejs project. In this simple project we build a simple Command Line Interface quiz. Eventually while doing the project let us build our project.
 
 What we will be learning by doing this project?
@@ -267,10 +267,9 @@ console.log("Woohooo!!, you scored "+finalScore);   // printing final score.
 ![Output of above program](./images/output.JPG)
 
 YAY!! you have done a CLI project, Though it is simple this will help you in building you fundamentals good.
-*Hope you learnt basics OF javascript*
+_Hope you learnt basics OF javascript_
 
 ### REPL link for above code [PLAY QUIZ](https://repl.it/@jaswanthreddyp/QUIZ?embed=1&output=1#index.js) | [QUIZ CODE](https://repl.it/@jaswanthreddyp/QUIZ#index.js)
-
 
 ## **EXPLORE JAVASCRIPT RESOURCES**
 
@@ -279,8 +278,6 @@ YAY!! you have done a CLI project, Though it is simple this will help you in bui
 - [Tanay Pratap's Javascript playlist](https://www.youtube.com/playlist?list=PLzvhQUIpvvuj9nN70USkHJrrSeQ9aiqdB)
 - [You don't know javascript](https://github.com/getify/You-Dont-Know-JS)
 
-
 ### **YOUR FEEDBACK WOULD BE USEFUL TO IMPROVE THIS DOCUMENTATION ❤**
 
-## If you like the documentation, write me on [twitter](https://twitter.com/jaswanthreddyp2) | [Github](https://github.com/JaswanthReddyPadala/) | jaswanthreddypadala@gmail.com
-
+## If you like the documentation, write me on [Twitter](https://twitter.com/jaswanthreddyp2) | [Linkedin](https://www.linkedin.com/in/jaswanthreddypadala/) | [Github](https://github.com/JaswanthReddyPadala/) | jaswanthreddypadala@gmail.com
